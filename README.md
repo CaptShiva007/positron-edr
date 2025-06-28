@@ -99,7 +99,3 @@ This is a **work in progress**, but I’m excited to see where it goes.
 * Sample detections
 * Evasion test cases
 * Community contributions?
-
----
-
-Let me know if you want to convert this into a GitHub README or Devlog style entry. I can also help you create diagrams or visuals for your architecture.
