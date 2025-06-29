@@ -35,7 +35,7 @@ async fn main() -> Result<()> {
         }
     });
 
-    println!("\n🧪 Creating test files to trigger events...");
+    println!("\nCreating test files to trigger events...");
     
     tokio::spawn(async {
         sleep(Duration::from_secs(2)).await;
@@ -66,17 +66,17 @@ async fn main() -> Result<()> {
         // Delete a file
         let _ = fs::remove_file(format!("{}/normal_file.txt", test_dir));
         
-        println!("✅ Test file operations completed");
+        println!("Test file operations completed");
     });
     
-    // Run for 10 seconds
-    println!("⏰ Monitoring for 10 seconds... Try creating/modifying files!");
+    // Run for 20 seconds
+    println!("Monitoring for 20 seconds... Try creating/modifying files!");
     sleep(Duration::from_secs(20)).await;
     
     // Stop monitoring
     monitor.stop_monitoring();
     event_handler.abort();
     
-    println!("\n✅ Demo completed!");
+    println!("\nDemo completed!");
     Ok(())
 }
