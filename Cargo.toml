@@ -12,3 +12,5 @@ tracing = "0.1"
 tracing-subscriber = "0.3"
 #For Timestamping the events
 chrono = {version = "0.4", features = ["serde"]}
+#FS monitoring
+notify = "6.0"

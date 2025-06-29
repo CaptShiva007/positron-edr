@@ -2,3 +2,4 @@
 /.vscode
 *.lock
 *.env
+/positron_test
